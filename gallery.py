@@ -25,7 +25,7 @@ def find_api_url(url):
     candidates = [
         url or API_URL,
         "http://127.0.0.1:11454/v1/chat/completions",
-        "http://192.168.0.202:11454/v1/chat/completions",
+        "http://127.0.0.1:11454/v1/chat/completions",
     ]
     for u in candidates:
         try:

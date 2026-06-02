@@ -103,7 +103,7 @@ python3 litert-lm-server.py --mode server --port 11454 --model-size 4b
 
 ```bash
 cp litert-lm-gemma.service ~/.config/systemd/user/
-sed -i "s|/home/madvulcan|$HOME|g" ~/.config/systemd/user/litert-lm-gemma.service
+sed -i "s|/path/to|$(pwd)|g" ~/.config/systemd/user/litert-lm-gemma.service
 # Edit to change --model-size if needed
 
 systemctl --user daemon-reload
@@ -203,7 +203,7 @@ python3 gallery.py --input-dir ~/Pictures/my-photos --output gallery.html
 
 # With custom server URL and no image resizing
 python3 gallery.py --input-dir ~/Pictures --output gallery.html \
-  --url http://192.168.0.202:11454 --resize 0
+  --url http://127.0.0.1:11454 --resize 0
 
 # With custom title
 python3 gallery.py --input-dir ~/Pictures --output gallery.html \
