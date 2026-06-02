@@ -37,7 +37,7 @@ LiteRT-LM Engine (GPU)
 
 ## Requirements
 
-- **GPU**: NVIDIA with ≥8 GB VRAM (tested on RTX 4070 Super 12 GB)
+- **GPU**: NVIDIA with ≥8 GB VRAM (tested on RTX 4060ti 16 GB)
 - **OS**: Linux (Ubuntu 24.04 LTS recommended)
 - **Python**: 3.10+
 - **Model**: Gemma 4 E2B or E4B `.litertlm` file (~2.4 GB or ~3.5 GB)
@@ -250,7 +250,7 @@ Edit these constants at the top of `litert-lm-server.py`:
 
 ## Performance
 
-Benchmarked on NVIDIA RTX 4070 Super (12 GB VRAM), Gemma 4 E4B:
+Benchmarked on NVIDIA RTX 4060ti (16 GB VRAM), Gemma 4 E4B:
 
 | Task | Speed | Notes |
 |---|---|---|
