@@ -1,0 +1,7 @@
+*.pyc
+__pycache__/
+*.log
+gallery.html
+gallery_*.html
+.venv/
+venv/
