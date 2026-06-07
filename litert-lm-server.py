@@ -87,7 +87,7 @@ def load_model(size="2b", path=None):
         vision_backend=litert_lm.Backend.GPU(),
         audio_backend=litert_lm.Backend.CPU(),
         max_num_tokens=4096,
-        enable_speculative_decoding=True,
+        enable_speculative_decoding=None,
     )
     logger.info(f"Model loaded on GPU ({info['params']})")
 
